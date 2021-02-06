@@ -1,4 +1,4 @@
-#Spring MVC
+# Spring MVC
 
 Create a maven project in intelleji idea.
 First, we write the dependencies we need in the file 
