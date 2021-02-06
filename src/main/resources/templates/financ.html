@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Финансы</title>
+</head>
+<body>
+<div th:insert="header :: header"></div>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+        <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="bank-info-head content_i calc_color">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="best-rates big-rates-table">
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Валюта</th>
+                            <th>Покупка</th>
+                            <th>Продажа</th>
+                            <th>НБ РБ</th>
+                            <th>БВФБ <sup class="ex_date">05.02 13:00</sup></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><a href="/currency/usd">Доллар США</a></td>
+                            <td>2.623</td>
+                            <td>2.625</td>
+                            <td>2.6282</td>
+                            <td>
+                                <span class="bl_usd_ex">2.6282</span>
+                                <sup class="ex_ch ch_usd_ex down">
+                                    -0.0082                                        </sup>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="/currency/eur">Евро</a></td>
+                            <td>3.144</td>
+                            <td>3.15</td>
+                            <td>3.1448</td>
+                            <td>
+                                <span class="bl_eur_ex">3.1448</span>
+                                <sup class="ex_ch ch_eur_ex down">
+                                    -0.0191                                        </sup>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="/currency/rub">Российский рубль<sup>100</sup></a></td>
+                            <td>3.496</td>
+                            <td>3.505</td>
+                            <td>3.5023</td>
+                            <td>
+                                <span class="bl_rub_ex">3.5023</span>
+                                <sup class="ex_ch ch_rub_ex up">
+                                    +0.0176                                        </sup>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="/currency/pln">Злотый<sup>10</sup></a></td>
+                            <td>6.82</td>
+                            <td>6.999</td>
+                            <td>6.9977</td>
+                            <td>
+                                <span class="bl_pln_ex">-</span>
+                                <sup class="ex_ch ch_pln_ex down">
+                                </sup>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="/currency/grivna">Гривна<sup>100</sup></a></td>
+                            <td>8.16</td>
+                            <td>9</td>
+                            <td>9.4701</td>
+                            <td>
+                                <span class="bl_grivna_ex">-</span>
+                                <sup class="ex_ch ch_grivna_ex down">
+                                </sup>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <ul class="additional_curr list-reset">
+                        <li><a href="/currency/gbp">Фунт стерлингов</a></li>
+                        <li><a href="/currency/cny">Юань</a></li>
+                        <li><a href="/currency/kzt">Тенге</a></li>
+                        <li><a href="/currency/chf">Швейцарский франк</a></li>
+                        <li><a href="/currency/eurusd">Доллар / Евро</a></li>
+                        <li><a href="/currency/usdrur">Доллар / Рос. рубли</a></li>
+                        <li><a onclick="requestCounter('currency_big_amount')" href="/currency/large-amounts">Для больших сумм</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
